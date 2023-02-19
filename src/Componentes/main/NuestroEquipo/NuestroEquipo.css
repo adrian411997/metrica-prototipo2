@@ -1,0 +1,217 @@
+.intro-container {
+  background-image: linear-gradient(
+      rgba(63, 59, 59, 0.5),
+      rgba(75, 73, 73, 0.5)
+    ),
+    url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676644304/metrica/teamwork-3213924_1920_gnrqxh.jpg");
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-position: center;
+  background-size: 100% 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+.first-topic {
+  color: rgb(44, 146, 193);
+}
+.intro-content {
+  width: 70%;
+}
+.intro-writing {
+  padding-bottom: 100px;
+  text-align: center;
+  color: white;
+}
+.intro-writing h1 {
+  padding: 10px 0px;
+  font-size: 50px;
+}
+.intro-writing p {
+  line-height: 2;
+  font-size: 20px;
+}
+.know-us {
+  background-color: rgb(40, 167, 69);
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.know-us a {
+  color: white;
+}
+.know-us:hover {
+  background-color: white;
+  color: rgb(40, 167, 69);
+  border: 1px solid rgb(40, 167, 69);
+}
+.know-us:hover a {
+  color: rgb(40, 167, 69);
+}
+.members {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(50, 48, 51);
+}
+.members h1 {
+  padding: 10px 0px;
+}
+.members p {
+  line-height: 2;
+  font-size: 20px;
+}
+.memeber-writting {
+  padding: 120px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+}
+.text-memebers-intro {
+  width: 50%;
+  position: absolute;
+  background-color: white;
+  padding: 80px 150px;
+  top: 50%;
+  left: 30%;
+}
+.image-illustrative {
+  background-image: url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676702207/metrica/descarga_1_lox8iy.jpg");
+  width: 50%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.memebers-container {
+  padding: 120px 0px;
+  width: 100%;
+  background-color: white;
+}
+.cards {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.card {
+  width: 25%;
+  height: 500px;
+  transition: all 0.5s ease-in-out;
+}
+.data img {
+  padding: 5px 10px;
+}
+.daniel {
+  background-image: url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676700544/metrica/maxresdefault_ri4mpk.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lucas {
+  background-image: url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676700540/metrica/Tg1-LZaAv95ggi3IqUkKcdiMbyQinuKs5paMhCFj4lS8liodkI6Tt5_Sexlucsa2byQyv1cPriRLKDkAuoLqqTxg89gypPrXBXn4MCs_dwg2vv.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.adrian {
+  background-image: url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676700543/metrica/HD-wallpaper-giga-chad-memes_xdcly6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ricardo {
+  background-image: url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676700546/metrica/joder-esto-si-es-cine-meme_bp5n7d.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info {
+  width: 100%;
+  height: 100%;
+  color: white;
+
+  display: none;
+}
+.card:hover {
+  overflow: hidden;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.card:hover .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(63, 59, 59, 0.5);
+  transition: 1s ease-in-out;
+}
+@media (max-width: 550px) {
+  .intro-writing h1 {
+    font-size: 40px;
+  }
+  .detail {
+    transform: translateY(90px);
+  }
+  .cards > div {
+    height: 190px;
+  }
+  .memeber-writting {
+    width: 95%;
+  }
+  .text-memebers-intro {
+    position: static;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .text-memebers-intro h1 {
+    font-size: 20px;
+  }
+  .text-memebers-intro p {
+    font-size: 18px;
+  }
+  .image-illustrative {
+    width: 100%;
+    background-size: 100% 100%;
+    height: 200px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    height: 600px;
+  }
+}
+@media (max-width: 340px) {
+  .detail {
+    transform: translateY(90px);
+    padding: 35px;
+  }
+}
+@media (max-width: 280px) {
+  .detail {
+    transform: translateY(110px);
+    height: 185px;
+  }
+  .image-member {
+    width: 100px;
+    height: 100px;
+    top: -75px;
+  }
+  .detail h2 {
+    font-size: 20px;
+  }
+  .detail p {
+    font-size: 15px;
+  }
+}

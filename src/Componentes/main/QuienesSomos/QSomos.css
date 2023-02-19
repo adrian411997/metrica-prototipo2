@@ -1,0 +1,38 @@
+.qsomos-container {
+  background-image: linear-gradient(
+      rgba(252, 251, 251, 0.849),
+      rgba(252, 251, 251, 0.849)
+    ),
+    url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676644304/metrica/teamwork-3213924_1920_gnrqxh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qsomos-content {
+  width: 70%;
+}
+.title-qsomos-content h1 b::before {
+  content: "";
+  height: 15px;
+  display: inline-block;
+  background-color: rgb(50, 48, 51);
+  color: rgb(50, 48, 51);
+  width: 4%;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+}
+.title-qsomos-content h1 {
+  display: flex;
+  position: relative;
+  color: rgb(50, 48, 51);
+  font-size: 70px;
+}
+.content-qsomos {
+  padding: 20px 0px;
+}
