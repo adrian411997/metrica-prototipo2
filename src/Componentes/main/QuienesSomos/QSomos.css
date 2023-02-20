@@ -7,11 +7,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 300px;
+
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 100px 0px;
 }
 .qsomos-content {
   width: 70%;
@@ -34,5 +34,39 @@
   font-size: 70px;
 }
 .content-qsomos {
-  padding: 20px 0px;
+  padding: 30px 10px;
+}
+.content-qsomos p {
+  padding: 10px 0px;
+  line-height: 2;
+}
+.Buttons-qsomos {
+  display: flex;
+  align-items: center;
+}
+.qsomos-buttons {
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  background-color: rgb(0, 161, 241);
+  border: none;
+  border-radius: 0.5em;
+  font-size: 15px;
+  font-family: "CustomFont";
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.qsomos-buttons a {
+  color: white;
+}
+.qsomos-buttons:hover {
+  border: 1px solid rgb(0, 161, 241);
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.qsomos-buttons:hover a {
+  color: rgb(0, 161, 241);
+  transition: 0.5s ease-in-out;
 }
