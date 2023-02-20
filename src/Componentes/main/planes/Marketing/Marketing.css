@@ -1,0 +1,193 @@
+.planes-container {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(240, 242, 245);
+  position: relative;
+}
+.planes-container-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(63, 59, 59, 0.5),
+      rgba(75, 73, 73, 0.5)
+    ),
+    url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676404077/metrica/facebook-ads-_sipwqk.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.planes-marketing-title {
+  padding-top: 50px;
+}
+.planes-container-title-content {
+  color: white;
+  width: 80%;
+  margin-bottom: -5px;
+}
+.planes-container-title-content h1 {
+  padding: 20px 0px;
+  color: #90d7f8;
+}
+.planes-container-title-content p {
+  width: 60%;
+  line-height: 2;
+}
+.marketing-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.planes-marketing-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.marketing-columns {
+  width: 50%;
+  background-color: white;
+  text-align: center;
+  margin: 0px 50px;
+  border-radius: 0.5rem;
+  box-shadow: -30px 30px 0px #9c7e83;
+  border-right: 3px solid #f79850;
+  border-top: 3px solid #f79850;
+}
+.marketing-column-image {
+  padding: 10px 0px;
+}
+.marketing-column-title {
+  padding: 10px 0px;
+}
+.marketing-column-title h3 {
+  padding: 10px;
+}
+.marketing-column-title2 {
+  padding: 10px 0px;
+  margin: 0px 50px;
+}
+.marketing-column-title2 h3 {
+  padding: 10px;
+}
+.marketing-column-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(233, 233, 244);
+  margin: 0 50px;
+  padding: 30px 0px 15px;
+}
+.marketing-column-price p {
+  padding-top: 5px;
+}
+.marketing-column-services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.marketin-column-services ul li {
+  list-style-type: none;
+  padding: 10px 0px;
+}
+.marketin-column-services {
+  padding-top: 10px;
+  width: 80%;
+}
+.marketin-column-button {
+  padding: 10px 0px;
+}
+.marketin-column-button a button {
+  padding: 15px;
+  width: 150px;
+  font-size: 15px;
+  background-color: rgb(44, 146, 193);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.marketin-column-button a button:hover {
+  background-color: white;
+  color: rgb(44, 146, 193);
+  border: 1px solid rgb(44, 146, 193);
+}
+.socialmedia-planes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #323033;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+.socialmedia-columns {
+  background-color: white;
+  padding: 0px 80px;
+  text-align: center;
+  box-shadow: -30px 30px 0px #9c7e83;
+  border-right: 3px solid #f79850;
+  border-top: 3px solid #f79850;
+  border-radius: 0.4em;
+}
+.socialmedia-container-title {
+  margin-top: 50px;
+  color: white;
+}
+.marketing-column-image img {
+  border-radius: 1em;
+}
+/*--------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------*/
+@media (max-width: 910px) {
+  .marketing-content {
+    width: 100%;
+  }
+  .planes-container-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+  }
+  .planes-container-title-content p {
+    width: 100%;
+  }
+  .planes-marketing-columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .planes-container-title-content h1 {
+    padding: 20px 0px;
+    color: #90d7f8;
+  }
+  .marketing-columns {
+    width: 80%;
+    margin: 20px 0px;
+  }
+  .planes-container-title,
+  .socialmedia-container-title {
+    text-align: center;
+  }
+  .socialmedia-columns {
+    width: 80%;
+    padding: 0px;
+  }
+  .planes-marketing-title {
+    text-align: center;
+  }
+}
