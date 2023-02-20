@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Footer from "../../utilities/Footer/Footer";
 import Header from "../../utilities/Header/Header";
 
 import "./NuestroEquipo.css";
@@ -168,6 +169,7 @@ const NuestroEquipo = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

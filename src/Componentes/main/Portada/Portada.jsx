@@ -25,7 +25,7 @@ const Portada = () => {
                 "Te llevamos a lo mas alto",
                 "Tu negocio crece",
               ]}
-              loop={100}
+              loop={10000}
               typeSpeed={30}
               deleteSpeed={20}
             />
