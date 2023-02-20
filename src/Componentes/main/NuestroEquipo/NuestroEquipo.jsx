@@ -21,6 +21,11 @@ const NuestroEquipo = () => {
         </div>
       </div>
       <div className="members" id="members">
+        <div className="members-container-content">
+          <h1>
+            <b>C</b>OMO SOMOS
+          </h1>
+        </div>
         <div className="memeber-writting">
           <div className="image-illustrative"></div>
           <div className="text-memebers-intro">
@@ -36,6 +41,11 @@ const NuestroEquipo = () => {
           </div>
         </div>
         <div className="memebers-container">
+          <div className="members-container-photos-title">
+            <h1>
+              <b>N</b>UESTRO EQUIPO
+            </h1>
+          </div>
           <div className="cards">
             <div className="card daniel">
               <div className="info">
