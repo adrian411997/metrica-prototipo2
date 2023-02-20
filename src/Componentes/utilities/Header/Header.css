@@ -1,8 +1,7 @@
 .header {
   display: flex;
   border: none;
-
-  background-color: rgba(48, 43, 70, 0.42);
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -58,7 +57,19 @@
   align-items: center;
   margin: 0px 20px;
   padding: 20px 0px;
-  color: rgb(207, 207, 211);
+  color: white;
+  display: inline-block;
+}
+.navbar > a > li:hover,
+.navbar > li:hover,
+.navbar > li > a:hover {
+  cursor: pointer;
+  display: block;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 20px 0px;
+  color: white !important;
   display: inline-block;
 }
 .navbar > a {
@@ -192,11 +203,60 @@ p > span {
   transition: 0.5s ease-in-out;
 }
 .black {
-  background-color: rgb(34, 8, 18);
+  background-color: white;
   padding: 0px;
   transition: 0.5s ease-in-out;
 }
-
+.black > .pacentrar > .pest > .enlaces > .navbar > a > li {
+  cursor: pointer;
+  display: block;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  color: black;
+  display: inline-block;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > li {
+  cursor: pointer;
+  display: block;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  color: black;
+  display: inline-block;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > a > li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > a > li:hover::after,
+.navbar > li:hover::after,
+.navbar > li > a:hover::after {
+  width: 100%;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > li:hover::after,
+.navbar > li:hover::after,
+.navbar > li > a:hover::after {
+  width: 100%;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > li:hover {
+  color: #000 !important;
+}
+.black > .pacentrar > .pest > .enlaces > .navbar > a > li:hover {
+  color: #000 !important;
+}
 /*--------------------------------------------------------------
 # RESPONSIVE
 --------------------------------------------------------------*/
