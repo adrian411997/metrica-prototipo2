@@ -1,10 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../../utilities/Header/Header";
 import Footer from "../../../utilities/Footer/Footer";
 import "./Marketing.css";
 import publicidad from "../../../images/publi.png";
+import GestionMarketin from "../../Gestion/GestionMarketin";
 
 const PlanesMarketing = () => {
+  const [showMetricaBasic, setShowMetricaBasic] = useState("");
+  const [showMetricaBasic2, setShowMetricaBasic2] = useState("");
+  const showPlanBasic = () => {
+    if (showMetricaBasic === "") {
+      setShowMetricaBasic("i-not-hiding");
+    } else {
+      setShowMetricaBasic("");
+    }
+  };
+  const showPlanBasic2 = () => {
+    if (showMetricaBasic2 === "") {
+      setShowMetricaBasic2("i-not-hiding2");
+    } else {
+      setShowMetricaBasic2("");
+    }
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -62,8 +79,11 @@ const PlanesMarketing = () => {
               </div>
             </div>
           </div>
+          <GestionMarketin />
           <div className="planes-marketing-title">
-            <h1>Marketing Digital y Social Media</h1>
+            <h1 className="title-black">
+              <b>M</b>arketing Digital y Social Media
+            </h1>
           </div>
           <div className="planes-marketing-columns">
             <div className="marketing-columns">
@@ -79,10 +99,7 @@ const PlanesMarketing = () => {
                 <h3>Metrica Basic</h3>
                 <p>Estrategia ideal para potenciar tu marca</p>
               </div>
-              <div className="marketing-column-price">
-                <h2>$60.000</h2>
-                <p>/ + IVA x mes</p>
-              </div>{" "}
+
               <div className="marketing-column-services-container">
                 <div className="marketin-column-services">
                   <ul>
@@ -91,12 +108,19 @@ const PlanesMarketing = () => {
                     </li>
                     <li>2 Historias por post</li>
                     <li>Diseño incluido</li>
-                    <li>Produccion fotografica</li>
-                    <li>Edicion de Video</li>
-                    <li>Estrategias de Crecimiento</li>
-                    <li>Programacion Mensual</li>
-                    <li>Reunion con tu manager</li>
+                    <div className={`im-hiding ${showMetricaBasic}`}>
+                      <li>Produccion fotografica</li>
+                      <li>Edicion de Video</li>
+                      <li>Estrategias de Crecimiento</li>
+                      <li>Programacion Mensual</li>
+                      <li>Reunion con tu manager</li>
+                    </div>
                   </ul>
+                </div>
+                <div className="button-show-more">
+                  <button className="show-more-button" onClick={showPlanBasic}>
+                    {showMetricaBasic === "" ? "VER MAS" : "VER MENOS"}
+                  </button>
                 </div>
               </div>
               <div className="marketin-column-button">
@@ -125,10 +149,6 @@ const PlanesMarketing = () => {
                   empresa
                 </p>
               </div>
-              <div className="marketing-column-price">
-                <h2>$85.000</h2>
-                <p>/ + IVA x mes</p>
-              </div>
               <div className="marketing-column-services-container">
                 <div className="marketin-column-services">
                   <ul>
@@ -136,19 +156,27 @@ const PlanesMarketing = () => {
                       <b>3 publicaciones semanales</b>
                     </li>
                     <li>3 Historias por post</li>
-                    <li>
-                      Publicidad en Redes – Lanzamiento de campañas pagas y
-                      posicionamiento
-                    </li>
-                    <li>
-                      Diseño incluido/Produccion fotografica/Edicion de Video
-                    </li>
-                    <li>Pautas no incluídas</li>
                     <li>Estrategias de Crecimiento</li>
-                    <li>Programacion Mensual</li>
-                    <li>Reportes mensuales</li>
-                    <li>Reunion con tu manager</li>
+                    <div className={`im-hiding ${showMetricaBasic2}`}>
+                      <li>
+                        Diseño incluido/Produccion fotografica/Edicion de Video
+                      </li>
+                      <li>Pautas no incluídas</li>
+                      <li>
+                        Publicidad en Redes – Lanzamiento de campañas pagas y
+                        posicionamiento
+                      </li>
+                      <li>Programacion Mensual</li>
+                      <li>Reportes mensuales</li>
+                      <li>Reunion con tu manager</li>
+                    </div>
                   </ul>
+                </div>
+                <div className="button-show-more">
+                  <button className="show-more-button" onClick={showPlanBasic2}>
+                    {" "}
+                    {showMetricaBasic2 === "" ? "VER MAS" : "VER MENOS"}
+                  </button>
                 </div>
               </div>
               <div className="marketin-column-button">
@@ -165,7 +193,9 @@ const PlanesMarketing = () => {
         </div>
         <div className="socialmedia-planes">
           <div className="socialmedia-container-title">
-            <h1>Publicidad en Redes Sociales</h1>
+            <h1 className="title-black">
+              <b>P</b>ublicidad en Redes Sociales
+            </h1>
           </div>
           <div className="planes-marketing-columns">
             <div className="socialmedia-columns">
@@ -181,10 +211,7 @@ const PlanesMarketing = () => {
                 <h3>Meta Business</h3>
                 <p>Estrategia Digital Publicitaria</p>
               </div>
-              <div className="marketing-column-price">
-                <h2>$35.000</h2>
-                <p>/ + IVA x mes</p>
-              </div>{" "}
+
               <div className="marketing-column-services-container">
                 <div className="marketin-column-services">
                   <ul>

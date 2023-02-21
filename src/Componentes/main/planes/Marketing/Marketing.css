@@ -1,18 +1,16 @@
 .planes-container {
   display: flex;
-
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(240, 242, 245);
+  background-color: white;
   position: relative;
 }
 .planes-container-title {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0px;
   width: 100%;
   background-image: linear-gradient(
       rgba(63, 59, 59, 0.5),
@@ -23,6 +21,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+.planes-container-title-content {
+  width: 70% !important;
 }
 .planes-marketing-explain {
   padding: 50px 0px;
@@ -59,6 +60,7 @@
   overflow: hidden;
   animation: moving 15s infinite;
 }
+
 @keyframes moving {
   0% {
     margin-left: 0;
@@ -83,6 +85,10 @@
 }
 .planes-marketing-title {
   padding-top: 50px;
+  width: 70%;
+}
+.planes-marketing-title h1 {
+  font-size: 60px !important;
 }
 .planes-container-title-content {
   color: white;
@@ -119,6 +125,8 @@
   box-shadow: -30px 30px 0px #9c7e83;
   border-right: 3px solid #f79850;
   border-top: 3px solid #f79850;
+  height: fit-content;
+  transition: 1s ease-in-out;
 }
 .marketing-column-image {
   padding: 10px 0px;
@@ -131,15 +139,39 @@
 }
 .marketing-column-title2 {
   padding: 10px 0px;
-  margin: 0px 50px;
+  width: 100%;
 }
 .marketing-column-title2 h3 {
   padding: 10px;
+  margin: 0px 50px;
+}
+.button-show-more {
+  margin: 10px 0px;
+}
+.show-more-button {
+  background-color: rgb(40, 167, 69);
+  border: 1px solid white;
+  color: white;
+  transition: 0.5s ease-in-out;
+  padding: 10px;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.show-more-button:hover {
+  background-color: white;
+  border: 1px solid rgb(40, 167, 69);
+  color: rgb(40, 167, 69);
+  transition: 0.5s ease-in-out;
+}
+.marketing-column-title2 p {
+  width: 90%;
+  margin-left: 20px;
 }
 .marketing-column-price {
   display: flex;
   justify-content: center;
   align-items: center;
+
   border-bottom: 1px solid rgb(233, 233, 244);
   margin: 0 50px;
   padding: 30px 0px 15px;
@@ -151,6 +183,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 10px 0px;
 }
 .marketin-column-services ul li {
@@ -160,6 +193,19 @@
 .marketin-column-services {
   padding-top: 10px;
   width: 80%;
+}
+.im-hiding {
+  display: none;
+}
+.i-not-hiding {
+  display: flex;
+  flex-direction: column;
+  transition: 1s ease-in-out;
+}
+.i-not-hiding2 {
+  display: flex;
+  flex-direction: column;
+  transition: 1s ease-in-out;
 }
 .marketin-column-button {
   padding: 10px 0px;
@@ -186,7 +232,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #323033;
+  background-color: white;
   margin-top: 40px;
   padding-bottom: 60px;
 }
@@ -200,8 +246,12 @@
   border-radius: 0.4em;
 }
 .socialmedia-container-title {
-  margin-top: 50px;
+  margin-top: 80px;
+  width: 70%;
   color: white;
+}
+.socialmedia-container-title h1 {
+  font-size: 60px;
 }
 .marketing-column-image img {
   border-radius: 1em;
