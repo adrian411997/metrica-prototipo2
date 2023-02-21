@@ -29,23 +29,7 @@
     opacity: 1;
   }
 }
-.title-servicio-content h1 b::before {
-  content: "";
-  height: 15px;
-  display: inline-block;
-  background-color: white;
-  color: white;
-  width: 4%;
-  position: absolute;
-  top: -20px;
-  left: -10px;
-}
-.title-servicio-content h1 {
-  display: flex;
-  position: relative;
-  color: white;
-  font-size: 70px;
-}
+
 .card-services-container {
   width: 100%;
   display: flex;

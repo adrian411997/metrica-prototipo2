@@ -24,6 +24,63 @@
   background-position: center;
   background-attachment: fixed;
 }
+.planes-marketing-explain {
+  padding: 50px 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.planes-marketing-explain-title {
+  width: 70%;
+}
+.planes-marketing-explain-content {
+  padding: 10px 0px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.explain {
+  width: 70%;
+}
+.explain p {
+  width: 60%;
+  line-height: 2;
+  color: black;
+}
+.explain-photo {
+  width: 20%;
+  overflow: hidden;
+}
+.photos-design {
+  display: flex;
+  overflow: hidden;
+  animation: moving 15s infinite;
+}
+@keyframes moving {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
 .planes-marketing-title {
   padding-top: 50px;
 }

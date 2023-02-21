@@ -6,7 +6,7 @@ const QSomos = () => {
     <div className="qsomos-container">
       <div className="qsomos-content">
         <div className="title-qsomos-content">
-          <h1>
+          <h1 className="title-black">
             <b>Q</b>UIENES SOMOS
           </h1>
         </div>
