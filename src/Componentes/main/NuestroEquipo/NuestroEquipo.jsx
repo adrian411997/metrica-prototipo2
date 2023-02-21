@@ -40,6 +40,87 @@ const NuestroEquipo = () => {
             </p>
           </div>
         </div>
+        <div className="members-talents-carac">
+          <div class="triangle triangle1"></div>
+          <div class="triangle triangle2"></div>
+          <div class="triangle triangle3"></div>
+
+          <div className="member-talents-title">
+            <h1>
+              <b>P</b>ORQUE SOMOS LOS MEJORES EN
+            </h1>
+          </div>
+          <div className="members-talents-container">
+            <div className="talent">
+              <div className="img-talent">
+                <img
+                  src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1676939545/metrica/pensamiento-cr%C3%ADtico-II_g0orvl.webp"
+                  alt=""
+                />
+              </div>
+              <div className="title-talent">CREATIVIDAD</div>
+              <div className="talent-description">
+                Ideamos, improvisamos y ensayamos en diversos programas de
+                edición gráfica para crear recursos espectulares para su próxima
+                página web.
+              </div>
+            </div>
+            <div className="talent">
+              <div className="img-talent">
+                <img
+                  src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1676939545/metrica/pensamiento-cr%C3%ADtico-II_g0orvl.webp"
+                  alt=""
+                />
+              </div>
+              <div className="title-talent">PENSAMIENTO CRITICO</div>
+              <div className="talent-description">
+                Buscamos siempre el mejor metodo para ejecutar nuestras tareas
+                viendo todas las posibilidades considerando siempre sus
+                necesidades{" "}
+              </div>
+            </div>
+            <div className="talent">
+              <div className="img-talent">
+                <img
+                  src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1676939545/metrica/pensamiento-cr%C3%ADtico-II_g0orvl.webp"
+                  alt=""
+                />
+              </div>
+              <div className="title-talent">CODEAR</div>
+              <div className="talent-description"></div>
+            </div>
+            <div className="talent">
+              <div className="img-talent">
+                <img
+                  src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1676939545/metrica/pensamiento-cr%C3%ADtico-II_g0orvl.webp"
+                  alt=""
+                />
+              </div>
+              <div className="title-talent">PLANIFICACION</div>
+              <div className="talent-description"></div>
+            </div>
+            <div className="talent">
+              <div className="img-talent">
+                <img
+                  src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1676939545/metrica/pensamiento-cr%C3%ADtico-II_g0orvl.webp"
+                  alt=""
+                />
+              </div>
+              <div className="title-talent">ESTILOS</div>
+              <div className="talent-description"></div>
+            </div>
+            <div className="talent">
+              <div className="img-talent">
+                <img
+                  src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1676939545/metrica/pensamiento-cr%C3%ADtico-II_g0orvl.webp"
+                  alt=""
+                />
+              </div>
+              <div className="title-talent">SORP</div>
+              <div className="talent-description"></div>
+            </div>
+          </div>
+        </div>
         <div className="memebers-container">
           <div className="members-container-photos-title">
             <h1>
@@ -50,7 +131,7 @@ const NuestroEquipo = () => {
             <div className="card daniel">
               <div className="info">
                 <h2>Daniel Moya</h2>
-                <p>Ceo, Experto en Marketing Digital</p>{" "}
+                <p>Ceo, Experto en Marketing Digital</p>
                 <div className="data">
                   <img
                     src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1673546463/metrica/linkedin_ijjxfn.png"
@@ -80,7 +161,6 @@ const NuestroEquipo = () => {
               </div>
             </div>
             <div className="card lucas">
-              {" "}
               <div className="info">
                 <h2>Lucas Flores</h2>
                 <p>Ceo, Programador</p>
