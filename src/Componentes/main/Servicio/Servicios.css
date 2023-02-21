@@ -46,13 +46,68 @@
   color: white;
   font-size: 70px;
 }
-
 .card-services-container {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 30px 0px;
+  justify-content: space-between;
 }
+.card-service {
+  width: 22%;
+  padding: 50px 0px;
+}
+.title-card {
+  padding: 10px 0px;
+  color: white;
+}
+.title-card h1 {
+  font-size: 20px;
+}
+.bar {
+  width: 20%;
+  height: 15px;
+  background-color: rgb(43, 145, 194);
+  color: blue;
+}
+.content {
+  padding: 50px 0px;
+  color: white;
+  height: 200px;
+}
+.content p {
+  line-height: 2;
+  text-align: justify;
+}
+.button-card {
+  padding: 15px 0px;
+  text-align: center;
+}
+.button-card button {
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: rgb(0, 161, 241);
+  border: none;
+  border-radius: 0.5em;
+  font-size: 15px;
+  font-family: "CustomFont";
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.button-card button a {
+  color: white;
+}
+.button-card button:hover {
+  border: 1px solid rgb(0, 161, 241);
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.button-card button:hover a {
+  color: rgb(0, 161, 241);
+  transition: 0.5s ease-in-out;
+}
+
+/*
 .card-service-list {
   width: 100%;
 
@@ -163,6 +218,7 @@
     opacity: 1;
   }
 }
+*/
 
 /* Responsive */
 @media (max-width: 1069px) {
