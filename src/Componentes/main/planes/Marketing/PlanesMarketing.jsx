@@ -24,6 +24,44 @@ const PlanesMarketing = () => {
               </p>
             </div>
           </div>
+          <div className="planes-marketing-explain">
+            <div className="planes-marketing-explain-title">
+              <h1 className="title-black">
+                <b>P</b> ORQUE MARKETING?
+              </h1>
+            </div>
+            <div className="planes-marketing-explain-content">
+              <div className="explain">
+                <p>
+                  Puedes tener el mejor contenido para ofrecer, el mejor
+                  servicio para brindar e ideas de expansion, pero todo puede
+                  complicarse si no tienes visibilidad en redes sociales o no
+                  puedes lograr que tu mensaje llegue a tus clientes. Ahi es
+                  donde entramos nosotros, para ayudarte a tener presencia y que
+                  tu negocio avance.
+                </p>
+              </div>
+              <div className="explain-photo">
+                <div className="photos-design">
+                  <img
+                    src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677012082/metrica/Mockap_a2ec6v.png"
+                    alt=""
+                    width={250}
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677012081/metrica/reeels_genxhf.png"
+                    alt=""
+                    width={250}
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677012081/metrica/mackk_wsvc7j.png"
+                    alt=""
+                    width={250}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="planes-marketing-title">
             <h1>Marketing Digital y Social Media</h1>
           </div>

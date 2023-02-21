@@ -18,7 +18,7 @@ const Servicios = () => {
     <div className="servicio-container">
       <div className={`${hide}`}>
         <div className="title-servicio-content">
-          <h1>
+          <h1 className="title-white">
             <b>N</b>uestros servicios
           </h1>
         </div>
