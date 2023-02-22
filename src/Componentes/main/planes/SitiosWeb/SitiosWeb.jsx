@@ -1,9 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../../utilities/Header/Header";
 import Footer from "../../../utilities/Footer/Footer";
+import GestionWeb from "../../Gestion/GestionWeb";
 import "./SitiosWeb.css";
 
 const SitiosWeb = () => {
+  const [showEmprender, setShowEmprender] = useState("");
+  const [showNegocio, setShowNegocio] = useState("");
+  const [showTienda, setShowTienda] = useState("");
+  const showPlanEmprender = () => {
+    if (showEmprender === "") {
+      setShowEmprender("web-hiding");
+    } else {
+      setShowEmprender("");
+    }
+  };
+  const showPlanNegocio = () => {
+    if (showNegocio === "") {
+      setShowNegocio("web-hiding");
+    } else {
+      setShowNegocio("");
+    }
+  };
+  const showPlanTienda = () => {
+    if (showTienda === "") {
+      setShowTienda("web-hiding");
+    } else {
+      setShowTienda("");
+    }
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,8 +49,13 @@ const SitiosWeb = () => {
             </p>
           </div>
         </div>
+        <GestionWeb />
         <div className="element-content">
-          <h1>¿QUE TE OFRECEMOS?</h1>
+          <div className="title-web-part-content">
+            <h1 className="title-white">
+              <b>L</b>O QUE TE OFRECEREMOS
+            </h1>
+          </div>
           <div className="elements">
             <div className="element first">
               <img
@@ -113,7 +143,7 @@ const SitiosWeb = () => {
                 Links a tu Facebook, Twitter, Instagram, Linkedin o la Red
                 Social que elijas.
               </div>
-            </div>{" "}
+            </div>
             <div className="element eight">
               <img
                 src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208863/metrica/consultas2_f5anc4.png"
@@ -132,7 +162,9 @@ const SitiosWeb = () => {
         </div>
         <div className="site-web-prices">
           <div className="site-web-prices-title">
-            <h1>Nuestros planes</h1>
+            <h1 className="title-black">
+              <b>N</b>uestros planes
+            </h1>
           </div>
           <div className="site-web-prices-columns">
             <div className="web-column">
@@ -141,18 +173,27 @@ const SitiosWeb = () => {
                 <b />
                 <p>Conseguí presencia profesional en Internet</p>
               </div>
-              <div className="web-column-price">200 USD</div>
               <div className="web-column-services">
                 <ul>
                   <li> Diseño de 1 sitio con 3 páginas</li>
                   <li>Hosting PLUS incluido</li>
                   <li>Vinculación con WhatsApp</li>
-                  <li> Enlace a tus redes sociales</li>
-                  <li> Formulario de contacto</li>
-                  <li> Optimizado para Google</li>
-                  <li> Adaptable a todas las pantallas</li>
-                  <li>Certificado de seguridad SSL</li>
+                  <div className={`im-hiding ${showEmprender}`}>
+                    <li> Enlace a tus redes sociales</li>
+                    <li> Formulario de contacto</li>
+                    <li> Optimizado para Google</li>
+                    <li> Adaptable a todas las pantallas</li>
+                    <li>Certificado de seguridad SSL</li>
+                  </div>
                 </ul>
+                <div className="web-button-show-more">
+                  <button
+                    className="show-more-button"
+                    onClick={showPlanEmprender}
+                  >
+                    {showEmprender === "" ? "VER MAS" : "VER MENOS"}
+                  </button>
+                </div>
               </div>
               <div className="web-column-button">
                 <button>Consultar</button>
@@ -164,47 +205,59 @@ const SitiosWeb = () => {
                 <b />
                 <p>Llevá tu empresa a nuevos mercados</p>
               </div>
-              <div className="web-column-price">200 USD</div>
               <div className="web-column-services">
                 <ul>
                   <li> Diseño de 1 sitio con 5 páginas</li>
                   <li>Hosting PLUS incluido</li>
                   <li>Vinculación con WhatsApp</li>
-                  <li> Enlace a tus redes sociales</li>
-                  <li> Formulario de contacto</li>
-                  <li> Optimizado para Google</li>
-                  <li> Localización en Google Maps</li>
-                  <li> Adaptable a todas las pantallas</li>
-                  <li>Certificado de seguridad SSL</li>
+                  <div className={`im-hiding ${showNegocio}`}>
+                    <li> Enlace a tus redes sociales</li>
+                    <li> Formulario de contacto</li>
+                    <li> Optimizado para Google</li>
+                    <li> Localización en Google Maps</li>
+                    <li> Adaptable a todas las pantallas</li>
+                    <li>Certificado de seguridad SSL</li>
+                  </div>
                 </ul>
+              </div>
+              <div className="web-button-show-more">
+                <button className="show-more-button" onClick={showPlanNegocio}>
+                  {showNegocio === "" ? "VER MAS" : "VER MENOS"}
+                </button>
               </div>
               <div className="web-column-button">
                 <button>Consultar</button>
               </div>
-            </div>{" "}
+            </div>
             <div className="web-column">
               <div className="web-column-title3">
                 <h1>TIENDA ONLINE</h1>
                 <b />
                 <p>Multiplicá tus ventas y llegá a más clientes</p>
               </div>
-              <div className="web-column-price">200 USD</div>
               <div className="web-column-services">
                 <ul>
                   <li> Diseño de 1 sitio con 5 páginas</li>
                   <li>Hosting NITRO incluido</li>
-                  <li>Mercadopago y envíos</li>
-                  <li>Optimizado paraventas y clientes</li>
-                  <li> Cupones con códigos de descuentos</li>
                   <li>Vinculación con WhatsApp</li>
-                  <li> Enlace a tus redes sociales</li>
-                  <li> Formulario de contacto</li>
-                  <li>Optimizado para Google</li>
-                  <li>Localización en Google Maps</li>
-                  <li> Adaptable a todas las pantallas</li>
-                  <li> Certificado de seguridad SSL</li>
-                  <li>Tienda autogestionable con tutoriales incluidos</li>
+                  <div className={`im-hiding ${showTienda}`}>
+                    <li>Mercadopago y envíos</li>
+                    <li>Optimizado paraventas y clientes</li>
+                    <li> Cupones con códigos de descuentos</li>
+                    <li> Enlace a tus redes sociales</li>
+                    <li> Formulario de contacto</li>
+                    <li>Optimizado para Google</li>
+                    <li>Localización en Google Maps</li>
+                    <li> Adaptable a todas las pantallas</li>
+                    <li> Certificado de seguridad SSL</li>
+                    <li>Tienda autogestionable con tutoriales incluidos</li>
+                  </div>
                 </ul>
+              </div>
+              <div className="web-button-show-more">
+                <button className="show-more-button" onClick={showPlanTienda}>
+                  {showTienda === "" ? "VER MAS" : "VER MENOS"}
+                </button>
               </div>
               <div className="web-column-button">
                 <button>Consultar</button>

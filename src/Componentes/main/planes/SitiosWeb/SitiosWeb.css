@@ -26,7 +26,7 @@
   background-repeat: no-repeat;
 }
 .site-web-title {
-  width: 80%;
+  width: 70%;
   color: white;
 }
 .site-web-title p {
@@ -37,10 +37,7 @@
   padding: 20px 0px;
   color: #90d7f8;
 }
-.element-content h1 {
-  padding: 30px 0px;
-  color: white;
-}
+
 .element-title {
   text-align: center;
   font-size: 15px;
@@ -57,9 +54,16 @@
   flex-direction: column;
   align-items: center;
 }
+.title-web-part-content {
+  width: 70%;
+}
+.title-web-part-content h1 {
+  margin-top: 50px;
+  font-size: 50px;
+}
 .elements {
   display: flex;
-  width: 90%;
+  width: 80%;
   height: 100%;
   justify-content: center;
   flex-wrap: wrap;
@@ -147,7 +151,10 @@
 .site-web-prices {
   text-align: center;
   padding-bottom: 50px;
-  width: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .web-column-title {
   padding: 20px 0px;
@@ -175,13 +182,18 @@
 }
 .site-web-prices-title {
   padding-top: 25px;
+  width: 70% !important;
+}
+.site-web-prices-title h1 {
+  font-size: 60px;
 }
 .site-web-prices-columns {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  width: 90%;
 }
-.web-column-services ul li:first-child {
+.web-column-services > ul > li:first-child {
   color: rgb(182, 145, 78);
   font-weight: bolder;
 }
@@ -196,7 +208,8 @@
 }
 
 .web-column-button button {
-  padding: 10px 10px;
+  padding: 15px;
+  width: 150px;
   border: none;
   background-color: rgb(44, 146, 193);
   border-radius: 0.3rem;
@@ -231,6 +244,15 @@
   padding: 20px 0px;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+}
+.web-hiding {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(233, 233, 244);
+}
+.web-button-show-more {
+  background-color: white;
+  padding: 20px 0px;
 }
 @media (max-width: 910px) {
   .site-web-portrait {
