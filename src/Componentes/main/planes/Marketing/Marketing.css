@@ -57,10 +57,13 @@
 }
 .photos-design {
   display: flex;
-  overflow: hidden;
+  width: 100%;
+
   animation: moving 15s infinite;
 }
-
+.photos-design img {
+  width: 100% !important;
+}
 @keyframes moving {
   0% {
     margin-left: 0;
