@@ -174,7 +174,6 @@ const PlanesMarketing = () => {
                 </div>
                 <div className="button-show-more">
                   <button className="show-more-button" onClick={showPlanBasic2}>
-                    {" "}
                     {showMetricaBasic2 === "" ? "VER MAS" : "VER MENOS"}
                   </button>
                 </div>
