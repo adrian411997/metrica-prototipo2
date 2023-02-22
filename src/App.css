@@ -6,7 +6,7 @@ button {
 }
 .icon-whatsapp {
   position: fixed;
-  top: 750px;
+  top: calc(100vh - 100px);
   left: 25px;
   cursor: pointer;
   display: flex;
