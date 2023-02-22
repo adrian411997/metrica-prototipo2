@@ -5,17 +5,17 @@
   align-items: center;
 }
 .foot-content-container {
-  width: 80%;
+  width: 90%;
 
   height: 100%;
 }
 .footer-content > div {
-  width: 100%;
+  width: 33%;
 }
 .footer-content {
   display: flex;
-
-  padding: 50px 0px;
+  justify-content: space-around;
+  padding: 10px 0px;
 }
 .footer-id {
   display: flex;
@@ -28,10 +28,15 @@
   align-items: center;
   justify-content: center;
 }
-.image-column {
-  border-right: 5px solid white;
+.name-column {
+  color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 0px;
+  line-height: 2;
 }
-.contact-column {
+.name .contact-column {
   color: white;
 }
 .footer-id-content {
@@ -41,14 +46,22 @@
 .contact {
   padding: 20px 0px;
   text-align: center;
+  color: white;
 }
-.email-contact {
-  padding: 30px 0px;
-}
+
 .social-buttons {
   padding-top: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.social-buttons > div {
+  display: flex;
+  align-items: center;
+}
+.social-buttons > div p {
+  margin-left: 20px;
 }
 .info-tel {
   padding-bottom: 10px;
@@ -73,8 +86,18 @@
   box-shadow: 0px 0px 5px 0.5px black;
   background-color: white;
   border: none;
-  margin: 0px 10px;
+  margin: 10px 0px;
 }
+.contact2-column {
+  flex-direction: column;
+  color: white;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.column-contact2-container {
+}
+
 @media (max-width: 600px) {
   .footer-content {
     flex-direction: column;

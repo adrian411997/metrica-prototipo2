@@ -4,7 +4,7 @@ import NuestroEquipo from "./Componentes/main/NuestroEquipo/NuestroEquipo";
 import { createBrowserRouter } from "react-router-dom";
 import PlanesMarketing from "./Componentes/main/planes/Marketing/PlanesMarketing";
 import SitiosWeb from "./Componentes/main/planes/SitiosWeb/SitiosWeb";
-
+import Contactanos from "./Componentes/main/Contactanos/Contactanos";
 export const App = createBrowserRouter([
   {
     path: "/",
@@ -16,4 +16,5 @@ export const App = createBrowserRouter([
   },
   { path: "/marketing", element: <PlanesMarketing /> },
   { path: "/sitiosweb", element: <SitiosWeb /> },
+  { path: "/contact", element: <Contactanos /> },
 ]);
