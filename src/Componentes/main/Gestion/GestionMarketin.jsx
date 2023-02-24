@@ -7,7 +7,8 @@ const GestionMarketin = () => {
       <div className="gestion-container">
         <div className="gestion-title">
           <h1 className="title-white">
-            <b>G</b>estión de <b className="dorado">Marketing Digital</b>
+            <div className="barra-white"></div> Gestión de
+            <span className="dorado">Marketing Digital</span>
           </h1>
         </div>
         <div className="gestion-list">

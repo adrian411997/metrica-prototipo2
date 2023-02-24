@@ -37,6 +37,9 @@
 .planes-marketing-explain-title {
   width: 70%;
 }
+.planes-marketing-explain-title h1 {
+  font-size: 70px;
+}
 .planes-marketing-explain-content {
   padding: 10px 0px;
   width: 70%;
@@ -91,7 +94,7 @@
   width: 70%;
 }
 .planes-marketing-title h1 {
-  font-size: 60px !important;
+  font-size: 60px;
 }
 .planes-container-title-content {
   color: white;
@@ -262,6 +265,7 @@
 /*--------------------------------------------------------------
 # RESPONSIVE
 --------------------------------------------------------------*/
+
 @media (max-width: 910px) {
   .marketing-content {
     width: 100%;
@@ -288,6 +292,7 @@
   .marketing-columns {
     width: 80%;
     margin: 20px 0px;
+    margin-left: 20px;
   }
   .planes-container-title,
   .socialmedia-container-title {
@@ -296,8 +301,46 @@
   .socialmedia-columns {
     width: 80%;
     padding: 0px;
+    margin-left: 20px;
   }
   .planes-marketing-title {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .planes-container-title-content {
+    width: 95% !important;
+  }
+  .planes-container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .planes-container-title h1 {
+    font-size: 25px;
+  }
+  .planes-marketing-explain-title {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .planes-marketing-explain-content {
+    width: 95%;
+    flex-direction: column;
+  }
+  .explain {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .explain p {
+    width: 100%;
+  }
+  .explain-photo {
+    width: 90%;
   }
 }

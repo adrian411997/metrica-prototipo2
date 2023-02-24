@@ -346,8 +346,29 @@
   transition: 1s ease-in-out;
 }
 @media (max-width: 550px) {
+  .intro-container {
+    height: 100vh;
+    padding: 0px;
+  }
+  .intro-content {
+    width: 90%;
+    text-align: center;
+    margin: auto 0;
+  }
   .intro-writing h1 {
     font-size: 40px;
+  }
+  .members-talents-carac {
+    overflow: hidden;
+  }
+  .members-talents-container {
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+  }
+  .talent {
+    width: 80%;
+    margin-left: 0px;
   }
   .detail {
     transform: translateY(90px);

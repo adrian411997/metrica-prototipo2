@@ -9,12 +9,11 @@
   width: 70%;
 }
 .gestion-title {
-  text-align: center;
   padding-bottom: 30px;
   color: white;
 }
 .gestion-title h1 {
-  font-size: 50px !important;
+  font-size: 50px;
 }
 .gestion-title h1 .dorado {
   color: rgb(226, 147, 12);
@@ -60,5 +59,18 @@
   .content-fb,
   .content-ig {
     padding: 0px 5px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gestion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gestion-title h1 {
+    font-size: 15px !important;
   }
 }

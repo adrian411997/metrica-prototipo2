@@ -87,3 +87,15 @@
     width: 200px !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .reunion-text h1 {
+    font-size: 25px;
+  }
+  .reunion-text p {
+    line-height: 2;
+  }
+  .reunion-button {
+    width: 50%;
+    font-size: 15px;
+  }
+}

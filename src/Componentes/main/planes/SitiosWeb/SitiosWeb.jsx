@@ -53,13 +53,13 @@ const SitiosWeb = () => {
         <div className="element-content">
           <div className="title-web-part-content">
             <h1 className="title-white">
-              <b>L</b>O QUE TE OFRECEREMOS
+              <div className="barra-white"></div>LO QUE TE OFRECEREMOS
             </h1>
           </div>
           <div className="elements">
             <div className="element first">
               <img
-                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208862/metrica/responsive_inv7tl.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190599/metrica/responsive-design_a0gnto.png"
                 alt=""
                 width={100}
                 height={100}
@@ -72,7 +72,7 @@ const SitiosWeb = () => {
             </div>
             <div className="element second">
               <img
-                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208863/metrica/dise%C3%B1o2_cyxnpo.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190599/metrica/dise%C3%B1o_elegante_f8kmiz.png"
                 alt=""
                 width={100}
                 height={100}
@@ -85,7 +85,7 @@ const SitiosWeb = () => {
             </div>
             <div className="element third">
               <img
-                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208863/metrica/crece_fflp98.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677191114/metrica/crecer_2_yrvqjn.png"
                 alt=""
                 width={100}
                 height={100}
@@ -98,7 +98,7 @@ const SitiosWeb = () => {
             </div>
             <div className="element fourth">
               <img
-                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208863/metrica/consultas3_lysfcs.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190600/metrica/consulta_cbbpuc.png"
                 alt=""
                 width={100}
                 height={100}
@@ -111,7 +111,7 @@ const SitiosWeb = () => {
             </div>
             <div className="element fifth">
               <img
-                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208863/metrica/banco_de_imagenes_nmcyw2.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190599/metrica/galeria-de-imagenes_pfvia2.png"
                 alt=""
                 width={100}
                 height={100}
@@ -124,8 +124,10 @@ const SitiosWeb = () => {
             </div>
             <div className="element sixth">
               <img
-                src="https://vazmedia.com/meexooch/2022/04/map.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190599/metrica/location_azb5c1.png"
                 alt="svg"
+                width={100}
+                height={100}
               />
               <h3>Google Maps</h3>
               <div>
@@ -135,8 +137,10 @@ const SitiosWeb = () => {
             </div>
             <div className="element seventh">
               <img
-                src="https://vazmedia.com/meexooch/2022/04/social-media.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190599/metrica/redes-sociales_ctei35.png"
                 alt="asoci"
+                width={100}
+                height={100}
               />
               <h3>Asociación a tus redes sociales</h3>
               <div>
@@ -146,7 +150,7 @@ const SitiosWeb = () => {
             </div>
             <div className="element eight">
               <img
-                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1675208863/metrica/consultas2_f5anc4.png"
+                src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677190600/metrica/conversacion_ayoebc.png"
                 alt="aseso"
                 width={100}
                 height={100}
@@ -162,9 +166,7 @@ const SitiosWeb = () => {
         </div>
         <div className="site-web-prices">
           <div className="site-web-prices-title">
-            <h1 className="title-black">
-              <b>N</b>uestros planes
-            </h1>
+            <h1 className="title-black">Nuestros planes</h1>
           </div>
           <div className="site-web-prices-columns">
             <div className="web-column">

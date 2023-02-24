@@ -1,3 +1,24 @@
-.grafico-content{
-  padding: 150px 0px;
+.design-graphic-portada {
+  background-image: linear-gradient(
+      rgba(63, 59, 59, 0.5),
+      rgba(75, 73, 73, 0.5)
+    ),
+    url("https://res.cloudinary.com/dni5cjwpu/image/upload/v1676404077/metrica/disenografico_gmlgyr.jpg");
+  width: 100%;
+  background-color: aqua;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 200px 0px;
+  display: flex;
+  justify-content: center;
+}
+.diseño-intro {
+  width: 70%;
+  color: #90d7f8;
+}
+.diseño-intro p {
+  padding: 10px 0px;
+  width: 60%;
+  line-height: 2;
+  color: white;
 }

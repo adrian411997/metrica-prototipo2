@@ -49,7 +49,7 @@
 .element-content {
   height: 100%;
   width: 100%;
-  background-color: #323033;
+  background-color: rgb(50, 48, 51);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,6 @@
 .element {
   width: 20%;
   padding: 20px 10px;
-
   margin: 30px 10px;
   text-align: center;
   border-radius: 1em;
@@ -82,9 +81,27 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  box-shadow: -10px 10px 0px #9c7e83;
-  border-right: 3px solid #f79850;
-  border-top: 3px solid #f79850;
+  box-shadow: -10px 10px 0px black;
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 3px,
+        transparent 3px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px)
+      0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 10px)
+      calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
+      calc(100% - 10px) no-repeat,
+    linear-gradient(90deg, #18dcff 0%, #bd05f2 100%);
+  border-radius: 8px;
+  padding: 9px;
 }
 .element h3 {
   padding: 10px 0px;
@@ -282,8 +299,8 @@
 @media (max-width: 500px) {
   .site-web-portrait {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
   .site-web-title p {
     width: 100%;
@@ -295,7 +312,8 @@
     flex-wrap: wrap;
   }
   .element {
-    width: 90%;
+    width: 95%;
+    margin: 30px 0px;
   }
   .site-web-prices-columns {
     flex-direction: column;
@@ -304,5 +322,8 @@
   .web-column {
     width: 100%;
     margin: 20px 0px;
+  }
+  .site-web-title {
+    width: 90%;
   }
 }

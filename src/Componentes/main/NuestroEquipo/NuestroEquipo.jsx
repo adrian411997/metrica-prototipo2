@@ -22,8 +22,8 @@ const NuestroEquipo = () => {
       </div>
       <div className="members" id="members">
         <div className="members-container-content">
-          <h1>
-            <b>C</b>OMO SOMOS
+          <h1 className="title-black">
+            <div className="barra-black"></div>COMO SOMOS
           </h1>
         </div>
         <div className="memeber-writting">
@@ -46,8 +46,8 @@ const NuestroEquipo = () => {
           <div class="triangle triangle3"></div>
 
           <div className="member-talents-title">
-            <h1>
-              <b>P</b>ORQUE SOMOS LOS MEJORES EN
+            <h1 className="title-white">
+              <div className="barra-white"></div>PORQUE SOMOS LOS MEJORES EN
             </h1>
           </div>
           <div className="members-talents-container">
@@ -123,8 +123,8 @@ const NuestroEquipo = () => {
         </div>
         <div className="memebers-container">
           <div className="members-container-photos-title">
-            <h1>
-              <b>N</b>UESTRO EQUIPO
+            <h1 className="title-black">
+              <div className="barra-black"></div>NUESTRO EQUIPO
             </h1>
           </div>
           <div className="cards">

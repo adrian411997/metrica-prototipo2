@@ -1,45 +1,27 @@
 import React from "react";
-import Header from "../../../../header/Header";
-import Footer from "../../../../Footer/Footer";
+import Header from "../../../utilities/Header/Header";
+import Footer from "../../../utilities/Footer/Footer";
 import "./DiseñoGrafico.css";
 
-const DiseñoGrafico =() => {
-    return(
-        <>
-        <Header />
-        <div className="grafico-content">
-        <div className="titulo">
-    <div>
-    <h1>Diseño grafico y Social Design</h1>
-    </div>
-    <div >
-    Detectamos y solucionamos problemas de comunicación visual.
-    </div>
-    <div className="tipos">
-    Nuestra meta es comunicar satisfactoriamente, para eso acompañamos a la creatividad de un lenguaje comunicacional acorde a los diferentes targets de cada empresa.
-    <div className="tipos"> 
-    <h2>
-        Tipos de desarrollos:
-    </h2>
-    <div className="lista">
-    <li>Logo</li>
-    <li>Imagen corporativa</li>
-    <li>Ilustración e imagenes digitales</li>
-    <li>Grafica publicitaria</li>
-    <li>Editorial</li>
-    <li>Interiores y señalizacion</li>
-    <li>Rebranding</li>
-    </div>
-    </div>
-    </div>
-</div>
-</div>
-<Footer />
-</>
-    )
-}
+const DiseñoGrafico = () => {
+  return (
+    <>
+      <Header />
+      <div className="design-graphic-portada">
+        <div className="diseño-intro">
+          <h1>PRESENTATE A TUS CLIENTES CON UNA BUENA IMÁGEN</h1>
+          <p>
+            Una parte igual de importante que las demas, muchos aman los iconos
+            o logos que transmite informacion mejorando la experiencia del
+            cliente tras horas de leer contenido. Nosotros le daremos a tu
+            empresa la imagen que se merece siguiendo sus lineamientos e
+            ideales.
+          </p>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
 
-
-
-
-export default DiseñoGrafico
+export default DiseñoGrafico;

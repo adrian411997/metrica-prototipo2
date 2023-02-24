@@ -44,7 +44,7 @@ const PlanesMarketing = () => {
           <div className="planes-marketing-explain">
             <div className="planes-marketing-explain-title">
               <h1 className="title-black">
-                <b>P</b> ORQUE MARKETING?
+                <div className="barra-black"></div> PORQUE MARKETING?
               </h1>
             </div>
             <div className="planes-marketing-explain-content">
@@ -82,7 +82,8 @@ const PlanesMarketing = () => {
           <GestionMarketin />
           <div className="planes-marketing-title">
             <h1 className="title-black">
-              <b>M</b>arketing Digital y Social Media
+              <div className="barra-black"></div>Marketing Digital y Social
+              Media
             </h1>
           </div>
           <div className="planes-marketing-columns">
@@ -193,7 +194,7 @@ const PlanesMarketing = () => {
         <div className="socialmedia-planes">
           <div className="socialmedia-container-title">
             <h1 className="title-black">
-              <b>P</b>ublicidad en Redes Sociales
+              <b className="barra">P</b>ublicidad en Redes Sociales
             </h1>
           </div>
           <div className="planes-marketing-columns">

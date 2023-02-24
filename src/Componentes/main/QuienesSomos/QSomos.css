@@ -54,3 +54,23 @@
   color: rgb(0, 161, 241);
   transition: 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 650px) {
+}
+@media screen and (max-width: 500px) {
+  .qsomos-content {
+    width: 95%;
+  }
+
+  .Buttons-qsomos {
+    flex-direction: column;
+  }
+  .Buttons-qsomos button {
+    width: 70%;
+  }
+  .title-qsomos-content h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
