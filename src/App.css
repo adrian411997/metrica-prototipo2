@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: black;
 }
 button {
   font-family: "CustomFont";
@@ -52,37 +53,50 @@ button {
     left: 15px;
   }
 }
-.title-white b::before {
-  content: "";
-  height: 15px;
-  display: inline-block;
-  background-color: white;
-  color: white;
-  width: 4%;
-  position: absolute;
-  top: -20px;
-  left: -10px;
-}
+
 .title-white {
   display: flex;
-  position: relative;
+  flex-direction: column;
   color: white;
   font-size: 70px;
 }
-.title-black b::before {
-  content: "";
-  height: 15px;
-  display: inline-block;
+.barra-white {
+  height: 10px;
+  background-color: white;
+  width: 8%;
+}
+.barra-black {
+  height: 10px;
   background-color: rgb(50, 48, 51);
-  color: rgb(50, 48, 51);
-  width: 4%;
-  position: absolute;
-  top: -20px;
-  left: -10px;
+  width: 8%;
 }
 .title-black {
   display: flex;
-  position: relative;
+  flex-direction: column;
   color: rgb(50, 48, 51);
   font-size: 70px;
+}
+@media (max-width: 1202px) {
+  .title-black,
+  .title-white {
+    font-size: 50px !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  .title-black,
+  .title-white {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 614px) {
+  .title-black,
+  .title-white {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title-black,
+  .title-white {
+    font-size: 20px !important;
+  }
 }

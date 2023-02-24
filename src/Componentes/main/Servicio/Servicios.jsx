@@ -19,7 +19,7 @@ const Servicios = () => {
       <div className={`${hide}`}>
         <div className="title-servicio-content">
           <h1 className="title-white">
-            <b>N</b>uestros servicios
+            <div className="barra-white"></div>Nuestros servicios
           </h1>
         </div>
         <div className="card-services-container">
