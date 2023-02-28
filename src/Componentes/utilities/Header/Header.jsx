@@ -9,14 +9,14 @@ const Header = () => {
   const [submenuShowUs, setSubmenuShowUs] = useState("");
   const [isDesplegado, setIsDesplegado] = useState(false);
   const [changeBackGround, setChangeBackground] = useState("");
-  const [color, setColor] = useState("#000");
+  const [color, setColor] = useState("#ffff");
   const [justheader, setJustHeader] = useState("");
   const [espacio, setEspacio] = useState("");
   const changeColor = () => {
     if (document.documentElement.scrollTop > 0) {
       setChangeBackground("sticky");
       setJustHeader("black");
-      setColor("#ffff");
+      setColor("#000");
       setEspacio("align");
     } else {
       setChangeBackground("");
