@@ -194,7 +194,7 @@ const PlanesMarketing = () => {
         <div className="socialmedia-planes">
           <div className="socialmedia-container-title">
             <h1 className="title-black">
-              <b className="barra">P</b>ublicidad en Redes Sociales
+              <div className="barra-black"></div>Publicidad en Redes Sociales
             </h1>
           </div>
           <div className="planes-marketing-columns">

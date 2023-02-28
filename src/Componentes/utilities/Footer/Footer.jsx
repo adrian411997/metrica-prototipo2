@@ -80,11 +80,19 @@ const Footer = () => {
               </div>
               <div className="contact-us">
                 <div className="phone-contact">
-                  <img src="" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677542210/metrica/telefono-inteligente_piiddz.png"
+                    alt=""
+                    width={25}
+                  />
                   <p>+543875850589</p>
                 </div>
                 <div className="email-contact">
-                  <img src="" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/dni5cjwpu/image/upload/v1677542210/metrica/correo-electronico_yhsqc9.png"
+                    alt=""
+                    width={25}
+                  />
                   <p>metrica.agenciamkt@gmail.com</p>
                 </div>
               </div>

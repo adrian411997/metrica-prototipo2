@@ -164,9 +164,7 @@
     opacity: 1;
   }
 }
-
 .site-web-prices {
-  text-align: center;
   padding-bottom: 50px;
   width: 100%;
   display: flex;
@@ -185,17 +183,21 @@
   padding: 30px 0px;
   background-color: rgb(240, 242, 245);
 }
+.basic:hover,
+.medio:hover,
+.pro:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 .web-column {
   display: flex;
   flex-direction: column;
   width: 25%;
   margin: 10px 20px;
   border-radius: 1em;
-  box-shadow: -30px 30px 0px #9c7e83;
-  border-right: 3px solid #f79850;
-  border-top: 3px solid #f79850;
-
-  height: fit-content;
+  transition: 0.5s ease-in-out;
 }
 .site-web-prices-title {
   padding-top: 25px;
@@ -209,6 +211,7 @@
   justify-content: center;
   padding-top: 50px;
   width: 90%;
+  text-align: center;
 }
 .web-column-services > ul > li:first-child {
   color: rgb(182, 145, 78);

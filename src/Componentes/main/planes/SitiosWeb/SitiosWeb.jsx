@@ -166,16 +166,18 @@ const SitiosWeb = () => {
         </div>
         <div className="site-web-prices">
           <div className="site-web-prices-title">
-            <h1 className="title-black">Nuestros planes</h1>
+            <h1 className="title-black">
+              <div className="barra-black"></div>Nuestros planes
+            </h1>
           </div>
-          <div className="site-web-prices-columns">
-            <div className="web-column">
-              <div className="web-column-title">
+          <div className="site-web-prices-columns ">
+            <div className="web-column basic">
+              <div className="web-column-title ">
                 <h1>EMPRENDER</h1>
                 <b />
                 <p>Conseguí presencia profesional en Internet</p>
               </div>
-              <div className="web-column-services">
+              <div className="web-column-services ">
                 <ul>
                   <li> Diseño de 1 sitio con 3 páginas</li>
                   <li>Hosting PLUS incluido</li>
@@ -201,13 +203,13 @@ const SitiosWeb = () => {
                 <button>Consultar</button>
               </div>
             </div>
-            <div className="web-column">
+            <div className="web-column medio">
               <div className="web-column-title2">
                 <h1>NEGOCIO</h1>
                 <b />
                 <p>Llevá tu empresa a nuevos mercados</p>
               </div>
-              <div className="web-column-services">
+              <div className="web-column-services med">
                 <ul>
                   <li> Diseño de 1 sitio con 5 páginas</li>
                   <li>Hosting PLUS incluido</li>
@@ -231,13 +233,13 @@ const SitiosWeb = () => {
                 <button>Consultar</button>
               </div>
             </div>
-            <div className="web-column">
+            <div className="web-column pro">
               <div className="web-column-title3">
                 <h1>TIENDA ONLINE</h1>
                 <b />
                 <p>Multiplicá tus ventas y llegá a más clientes</p>
               </div>
-              <div className="web-column-services">
+              <div className="web-column-services ">
                 <ul>
                   <li> Diseño de 1 sitio con 5 páginas</li>
                   <li>Hosting NITRO incluido</li>

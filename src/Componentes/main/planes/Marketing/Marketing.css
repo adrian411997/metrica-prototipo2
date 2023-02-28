@@ -61,7 +61,6 @@
 .photos-design {
   display: flex;
   width: 100%;
-
   animation: moving 15s infinite;
 }
 .photos-design img {
@@ -89,6 +88,7 @@
     margin-left: -200%;
   }
 }
+
 .planes-marketing-title {
   padding-top: 50px;
   width: 70%;
