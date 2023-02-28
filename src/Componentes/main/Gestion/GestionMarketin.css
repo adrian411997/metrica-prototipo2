@@ -14,6 +14,7 @@
 }
 .gestion-title h1 {
   font-size: 50px;
+  display: inline-block;
 }
 .gestion-title h1 .dorado {
   color: rgb(226, 147, 12);

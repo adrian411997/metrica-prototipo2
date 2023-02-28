@@ -63,12 +63,12 @@ button {
 .barra-white {
   height: 10px;
   background-color: white;
-  width: 8%;
+  width: 5%;
 }
 .barra-black {
   height: 10px;
   background-color: rgb(50, 48, 51);
-  width: 8%;
+  width: 5%;
 }
 .title-black {
   display: flex;
@@ -87,11 +87,31 @@ button {
   .title-white {
     font-size: 40px !important;
   }
+  .barra-white {
+    height: 5px;
+    background-color: white;
+    width: 5%;
+  }
+  .barra-black {
+    height: 5px;
+    background-color: rgb(50, 48, 51);
+    width: 5%;
+  }
 }
 @media screen and (max-width: 614px) {
   .title-black,
   .title-white {
     font-size: 30px !important;
+  }
+  .barra-white {
+    height: 4px;
+    background-color: white;
+    width: 5%;
+  }
+  .barra-black {
+    height: 4px;
+    background-color: rgb(50, 48, 51);
+    width: 5%;
   }
 }
 @media screen and (max-width: 500px) {
