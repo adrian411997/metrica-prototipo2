@@ -474,7 +474,7 @@ p > span {
     font-size: 21px;
   }
   .sticky {
-    background-color: rgb(34, 8, 18);
+    background-color: white;
     transition: 0.5s ease-in-out;
   }
 }
